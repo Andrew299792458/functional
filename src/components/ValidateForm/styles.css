@@ -1,0 +1,30 @@
+input{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+.btn {
+    height: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.red{
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
