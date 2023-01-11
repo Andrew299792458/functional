@@ -28,3 +28,6 @@ input{
     margin: 0 auto;
     
 }
+.showError{
+    border-color: red;
+}

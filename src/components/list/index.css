@@ -1,0 +1,74 @@
+.Main{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.Main button:hover{
+    background-color:#2F956D;
+    color: white;
+}
+.Main button{
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 17px;
+    transition: all 0.3s;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: #2F956D;
+    background-color: transparent;
+    border: 1px solid #2F956D;
+    margin: 7px;
+    cursor: pointer;
+    height: 45px;
+    width: 101px;
+
+}
+.active{
+    background-color: #2F956D !important;
+    color: white !important;
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.lists div{
+    
+    margin: 10px 0;
+}
+.lists div img{
+    width: 250px;
+    height: 250px;
+}
+.article{
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 17px;
+    width: 280px;
+    height: 516px;
+    padding: 0px 15px;
+}
+.article h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #1A6692;
+    margin-bottom: 15px;
+}
+.article p{
+    color: #626364;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+.article span{
+    font-size: 1.25rem;
+    color: #2F956D;
+    margin-bottom: 60px;
+    line-height: 1.8;
+}

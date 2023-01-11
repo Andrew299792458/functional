@@ -42,7 +42,7 @@ class ValidateForm extends Component {
   }
   onChange = (e) => {
     if (this.onFormValidation()) {
-      this.setState(this.initialState)
+      this.setState()
     }
     const { name, value } = e.target;
     this.setState({ [name]: value });

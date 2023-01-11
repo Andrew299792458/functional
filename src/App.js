@@ -1,12 +1,14 @@
 import React from "react";
-import ValidateForm from "./components/ValidateForm"
+import List from "./components/list";
+import Header from "./components/Header"
 
 
 
 function App() {
   return (
     <div className="App">
-      <ValidateForm />
+      <Header />
+      <List />
     </div>
   );
 }
