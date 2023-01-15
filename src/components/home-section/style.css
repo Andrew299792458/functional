@@ -1,0 +1,17 @@
+.avo{
+    width: 530px;
+    height: 265px;
+}
+.main{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 143px;
+    height: 43px;
+}

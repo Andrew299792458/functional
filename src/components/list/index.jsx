@@ -7,6 +7,8 @@ import Salad1 from "../../assets/images/4.jpg"
 import Salad2 from "../../assets/images/5.jpg"
 import Noodle1 from "../../assets/images/6.jpg"
 import Noodle2 from "../../assets/images/7.jpg"
+
+// import { Buttons } from "../list-buttons";
 import "./index.css"
 
 export class List extends Component {
@@ -80,6 +82,13 @@ export class List extends Component {
 
 
             <div className="Main">
+                <div className="welcome">
+                    <h2>
+                        Welcome to Simple House  
+                    </h2>
+                    <p>Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites.</p>
+
+                </div>
                 <div className="btn">
 
                     {this.state.buttons.map((elem, index) => {
@@ -97,9 +106,9 @@ export class List extends Component {
                     })}
                 </div>
             </div>
+            
         </>
 
     }
 }
 
-export default List

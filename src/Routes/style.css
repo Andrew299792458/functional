@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 460px;
+    position: relative;
+}
+.wall{
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible;
+    top: 0px;
+    height: 460px;
+    width: 1200px;
+    
+}
+.wall-img{
+    background-image: url("../assets/images/simple-house-01.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    size: cover;
+    transform: translate3d(0px, 0px, 0px);
+    position: absolute;
+    top: -445px;
+    left: 0px;
+    height: 1200px;
+    width: 1200px;
+    max-width: none;
+    z-index: -999 !important;
+}
+
+
+.menu{
+    right: 100px;
+    position: absolute;
+    height: 400px;
+    width: 200px;
+    bottom: -325px;
+    
+  
+}
+.menu ul{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    
+}
+.menu ul li{
+    transition: all 0.3s;
+    display: block;
+    align-items: flex-start;
+    width: 34px;
+    height: 48px;
+    padding: 0px 25px;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 17px;
+    color: white;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+.menu ul li a{
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu ul li:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+
+}

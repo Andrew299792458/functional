@@ -5,6 +5,10 @@
     width: 1200px;
     height: 460px;
     background-image: url("../../assets/images/simple-house-01.jpg") ;
+    background-position: center;
+    background-attachment: fixed;
+    size: cover;
+    position: absolute;
 }
 .welcome{
     font-family: 'Open Sans',Arial,sans-serif;
@@ -39,17 +43,21 @@ h2{
     font-weight: 400;
     color: white;
 }
-.nav a{
+.nav ul{
+display: flex;
+flex-direction: row;
+}
+.nav li{
     width: 34px;
-    height: 48px !important;
+    height: 48px;
     padding: 0px 25px;
     font-family: 'Open Sans',Arial,sans-serif;
     font-size: 17px;
     color: white;
-    text-decoration: none;
+    list-style-type: none;
     
 }
-.nav a:hover{
+.nav li:hover{
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }

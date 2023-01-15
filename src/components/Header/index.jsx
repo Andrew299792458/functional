@@ -14,9 +14,7 @@ export class Header extends Component {
                     <h6>new restaurant template</h6>
                 </div>
                 <div className="nav">
-                    <a href="http//somewhere.com">Home</a>
-                    <a href="http//somewhere.com">About</a>
-                    <a href="http//somewhere.com">Contact</a>
+                    <ul><li>Home</li><li>About</li><li>Contact</li></ul>
                 </div>
             </div>
             <div className="welcome">

@@ -1,14 +1,37 @@
 .Main{
+    background: #ffffff;
     width: 1200px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
+    
+}
+.welcome{
+    font-family: 'Open Sans',Arial,sans-serif;
+    width: 655px;
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    flex-direction: column;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.welcome p{
+    font-size: 17px;
+    color: #626364;
+    line-height: 1.8;
+    padding: 0px 15px;
 }
 .btn{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+   
+    margin-bottom: 30px;
 }
 .Main button:hover{
     background-color:#2F956D;
@@ -28,6 +51,7 @@
     cursor: pointer;
     height: 45px;
     width: 101px;
+    
 
 }
 .active{
@@ -35,6 +59,7 @@
     color: white !important;
 }
 .lists{
+    margin-top: 70px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
