@@ -9,7 +9,7 @@ import Noodle1 from "../../assets/images/6.jpg"
 import Noodle2 from "../../assets/images/7.jpg"
 
 // import { Buttons } from "../list-buttons";
-import "./index.css"
+import "./style.css"
 
 export class List extends Component {
     state = {
@@ -65,35 +65,39 @@ export class List extends Component {
                 type: "noodle"
             },],
         buttons: ["pizza", "salad", "noodle"],
-
         list2: []
     }
+
+    componentDidMount() {
+        console.log("Mounted");
+    }
+
+    shouldComponentUpdate() {
+        return true
+    }
+
+    componentDidUpdate() {
+         console.log("Update"); // props kam state-i popoxveluc
+    }
+
+    componentWillUnmount() {
+        console.log("dead");
+    }
+
     componentDidMount() {
         this.setState({ list2: this.state.list.filter(x => x.type === this.state.name) })
     }
-
     active = (e) => {
+
         this.setState({ name: e })
         this.setState({ list2: this.state.list.filter(x => x.type === e) })
     }
-
     render() {
         return <>
-
-
-            <div className="Main">
-                <div className="welcome">
-                    <h2>
-                        Welcome to Simple House  
-                    </h2>
-                    <p>Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites.</p>
-
-                </div>
-                <div className="btn">
-
-                    {this.state.buttons.map((elem, index) => {
-                        return <button onClick={() => this.active(elem)} className={this.state.name === elem ? "active" : null} key={index}>{elem}</button>
-                    })}
+            <div className="prod">
+                <div className="btn"> {this.state.buttons.map((elem, index) => {
+                    return <button onClick={() => this.active(elem)} className={this.state.name === elem ? "active" : null} key={index}>{elem}</button>
+                })}
                 </div>
                 <div className="lists">
                     {this.state.list2.map((elem, index) => {
@@ -106,7 +110,7 @@ export class List extends Component {
                     })}
                 </div>
             </div>
-            
+
         </>
 
     }

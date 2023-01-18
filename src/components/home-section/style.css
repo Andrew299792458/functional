@@ -2,16 +2,44 @@
     width: 530px;
     height: 265px;
 }
-.main{
+.avoMain{
     width: 1200px;
     display: flex;
     flex-direction: row;
+    gap:50px;
+    margin-bottom: 80px;
 }
-.text{
+.avoText{
+    font-family: 'Open Sans',Arial,sans-serif;
+    gap: 50px;
     display: flex;
     flex-direction: column;
 }
-button{
+.avoText button{
+    transition: all 0.3s;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #626364;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin-left: 400px;
     width: 143px;
     height: 43px;
+}
+.avoText button:hover{
+    color: white;
+    background-color: #98999A;
+}
+.avoText p{
+    font-size: 17px;
+    color: #626364;
+    line-height: 1.8;
+    width: 600px;
+    text-align: left;
+}
+.avoText h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #1A6692;
+   
 }

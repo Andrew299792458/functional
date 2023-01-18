@@ -1,0 +1,15 @@
+.profiles{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.moreHistory{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

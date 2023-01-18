@@ -1,0 +1,15 @@
+.history{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+margin-bottom: 100px;
+}
+.text{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.text p {
+    text-align: left;
+}

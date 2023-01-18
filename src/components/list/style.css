@@ -1,43 +1,33 @@
-.Main{
-    background: #ffffff;
+ .prod{
     width: 1200px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     flex-direction: column;
-    
 }
-.welcome{
-    font-family: 'Open Sans',Arial,sans-serif;
-    width: 655px;
+.lists{
+    margin-top: 70px;
     display: flex;
-    justify-content: center;
-    margin: 60px auto;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-h2{
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-.welcome p{
-    font-size: 17px;
-    color: #626364;
-    line-height: 1.8;
-    padding: 0px 15px;
+.lists div img{
+    width: 250px;
+    height: 250px;
 }
 .btn{
     display: flex;
     justify-content: center;
-   
+   flex-direction: row;
     margin-bottom: 30px;
 }
-.Main button:hover{
+.prod button:hover{
     background-color:#2F956D;
     color: white;
 }
-.Main button{
+.prod button{
     font-family: 'Open Sans',Arial,sans-serif;
     font-size: 17px;
     transition: all 0.3s;
@@ -51,26 +41,6 @@ h2{
     cursor: pointer;
     height: 45px;
     width: 101px;
-    
-
-}
-.active{
-    background-color: #2F956D !important;
-    color: white !important;
-}
-.lists{
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.lists div{
-    
-    margin: 10px 0;
-}
-.lists div img{
-    width: 250px;
-    height: 250px;
 }
 .article{
     font-family: 'Open Sans',Arial,sans-serif;
@@ -78,6 +48,7 @@ h2{
     width: 280px;
     height: 516px;
     padding: 0px 15px;
+
 }
 .article h4{
     font-size: 1.3rem;
@@ -86,6 +57,7 @@ h2{
     margin-bottom: 15px;
 }
 .article p{
+    text-align: left;
     color: #626364;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -97,3 +69,11 @@ h2{
     margin-bottom: 60px;
     line-height: 1.8;
 }
+/* .active{
+    background-color: #2F956D !important;
+    color: white !important;
+} */
+
+
+
+ 

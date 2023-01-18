@@ -1,0 +1,18 @@
+.quiz{
+    width: 500px;
+    border: 1px solid gray;
+}
+.quests{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.cont{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}

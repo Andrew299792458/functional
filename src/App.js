@@ -1,20 +1,13 @@
-
-
 import { Routing } from "./Routes";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./Home";
+import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Footer } from "./components/footer"
 
-
-
-
 function App() {
   return (
     <div className="App">
-
-
       <Routing />
       <Routes>
         <Route path="/home" element={<Home />} />

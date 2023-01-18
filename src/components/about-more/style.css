@@ -1,0 +1,25 @@
+.Main{
+    font-family: 'Open Sans',Arial,sans-serif;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+.Main img{
+    height: 60px;
+}
+.Main div{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+button{
+    width: 141px;
+    height: 46px;
+    color: white;
+}

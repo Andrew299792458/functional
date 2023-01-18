@@ -1,0 +1,53 @@
+.profile{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.profile h4{
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #09C;
+    margin-bottom: 5px;
+}
+.prof{
+    line-height: 1.8;
+    color: #C39;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.about{
+    color: #626364;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.icons img{
+    width: 20px;
+}
+.ceoList{
+    font-family: 'Open Sans',Arial,sans-serif;
+    gap: 100px;
+    width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.aboutWall{
+    background-image: url("../../assets/images/about-051.jpg");
+    height: 220px;
+    width: 1090px;
+    margin-top: 80px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

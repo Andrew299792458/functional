@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.map{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    width: 600px;
+}
