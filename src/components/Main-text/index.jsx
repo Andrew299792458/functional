@@ -1,15 +1,13 @@
-import React, {Component} from "react";
+import React from "react";
 import "./style.css"
 
-export class  MainText extends Component{
+export const MainText = (props) => {
 
+    const title = props.title
+    const description = props.description
 
-    render() {
-        const {title,description} = this.props
-
-        return <div className="title">
-            {title? <h2>{title}</h2> : null}
-            <p>{description}</p>
-        </div>
-    }
+    return <div className="title">
+        {title ? <h2>{title}</h2> : null}
+        <p>{description}</p>
+    </div>
 }

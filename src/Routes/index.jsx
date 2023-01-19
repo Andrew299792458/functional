@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import Logo from "../assets/images/simple-house-logo.png"
 import "./style.css"
 import { NavLink } from "react-router-dom";
 
 
-export class Routing extends Component {
-    render() {
+export const Routing =()=>{
+    
         return <>
             <div className="head">
                 <div className="wall">
@@ -32,5 +32,5 @@ export class Routing extends Component {
             </div>
         </>
 
-    }
+    
 }

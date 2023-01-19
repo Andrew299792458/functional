@@ -5,11 +5,8 @@ import { AboutMore } from "../../components/about-more";
 import { AboutMain } from "../../components/About-main";
 import "./style.css"
 
-export class About extends Component {
+export const About =()=> {
 
-  
-
-    render() {
         return <div className="profiles">
             <MainText title={"About Simple House"} description={"This is about page of simple house template. You can modify and use this HTML template for your website. Total 3 HTML pages included in this template. Header image has a parallax effect."} />
             <div className="moreHistory">
@@ -18,5 +15,5 @@ export class About extends Component {
                 <History />
             </div>
         </div>
-    }
+    
 }

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./style.css"
 import pic1 from "../../assets/images/about-01.jpg"
 import pic2 from "../../assets/images/about-02.jpg"
@@ -11,159 +11,157 @@ import youtube from "../../assets/images/yout.png"
 
 
 
-export class AboutMain extends Component {
+export const AboutMain = () => {
 
-    state = {
-        list: [
-            {
-                img: pic1,
-                name: "Jennifer Soft",
-                ceo: "Founder and CEO",
-                about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
-                social: [{
-                    icon: facebook,
-                    alt: "facebook",
-                    link: "facebook.com"
-                },
-                {
-                    icon: twitter,
-                    alt: "twitter",
-                    link: "twitter.com"
-                },
-                {
-                    icon: instagram,
-                    alt: "instagram",
-                    link: "instagram.com"
-                },
-                {
-                    icon: youtube,
-                    alt: "youtube",
-                    link: "youtube.com"
-                }
 
-                ]
-
+    const [list, setList] = useState([
+        {
+            img: pic1,
+            name: "Jennifer Soft",
+            ceo: "Founder and CEO",
+            about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
+            social: [{
+                icon: facebook,
+                alt: "facebook",
+                link: "facebook.com"
             },
             {
-
-                img: pic2,
-                name: "Daisy Walker",
-                ceo: "Executive Chef",
-                about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
-                social: [{
-                    icon: facebook,
-                    alt: "facebook",
-                    link: "facebook.com"
-                },
-                {
-                    icon: twitter,
-                    alt: "twitter",
-                    link: "twitter.com"
-                },
-                {
-                    icon: instagram,
-                    alt: "instagram",
-                    link: "instagram.com"
-                },
-                {
-                    icon: youtube,
-                    alt: "youtube",
-                    link: "youtube.com"
-                }
-
-                ]
-
+                icon: twitter,
+                alt: "twitter",
+                link: "twitter.com"
             },
             {
-
-                img: pic3,
-                name: "Florence Nelson",
-                ceo: "Kitchen Manager",
-                about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
-                social: [{
-                    icon: facebook,
-                    alt: "facebook",
-                    link: "facebook.com"
-                },
-                {
-                    icon: twitter,
-                    alt: "twitter",
-                    link: "twitter.com"
-                },
-                {
-                    icon: instagram,
-                    alt: "instagram",
-                    link: "instagram.com"
-                },
-                {
-                    icon: youtube,
-                    alt: "youtube",
-                    link: "youtube.com"
-                }
-
-                ]
-
+                icon: instagram,
+                alt: "instagram",
+                link: "instagram.com"
             },
             {
-
-                img: pic4,
-                name: "Valentina Martin",
-                ceo: "Culinary Director",
-                about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
-                social: [{
-                    icon: facebook,
-                    alt: "facebook",
-                    link: "facebook.com"
-                },
-                {
-                    icon: twitter,
-                    alt: "twitter",
-                    link: "twitter.com"
-                },
-                {
-                    icon: instagram,
-                    alt: "instagram",
-                    link: "instagram.com"
-                },
-                {
-                    icon: youtube,
-                    alt: "youtube",
-                    link: "youtube.com"
-                }
-
-                ]
+                icon: youtube,
+                alt: "youtube",
+                link: "youtube.com"
             }
-        ],
-    }
 
-    render() {
-        return <div>
-            <div className="ceoList">
-                {this.state.list.map((elem, index) => {
-                    return <div className="profile" key={index}>
-                        <img src={elem.img} alt={elem.name} />
-                        <div>
-                            <h4>{elem.name}</h4>
-                            <p className="prof">{elem.ceo}</p>
-                            <p className="about">{elem.about}</p>
-                            <div className="icons">
-                                {elem.social.map((sm, index) => {
-                                    return <div key={index}>
-                                        <a href={sm.link}> <img src={sm.icon} alt={sm.name}></img></a>
-                                    </div>
-                                })}
-                            </div>
+            ]
+
+        },
+        {
+
+            img: pic2,
+            name: "Daisy Walker",
+            ceo: "Executive Chef",
+            about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
+            social: [{
+                icon: facebook,
+                alt: "facebook",
+                link: "facebook.com"
+            },
+            {
+                icon: twitter,
+                alt: "twitter",
+                link: "twitter.com"
+            },
+            {
+                icon: instagram,
+                alt: "instagram",
+                link: "instagram.com"
+            },
+            {
+                icon: youtube,
+                alt: "youtube",
+                link: "youtube.com"
+            }
+
+            ]
+
+        },
+        {
+
+            img: pic3,
+            name: "Florence Nelson",
+            ceo: "Kitchen Manager",
+            about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
+            social: [{
+                icon: facebook,
+                alt: "facebook",
+                link: "facebook.com"
+            },
+            {
+                icon: twitter,
+                alt: "twitter",
+                link: "twitter.com"
+            },
+            {
+                icon: instagram,
+                alt: "instagram",
+                link: "instagram.com"
+            },
+            {
+                icon: youtube,
+                alt: "youtube",
+                link: "youtube.com"
+            }
+
+            ]
+
+        },
+        {
+
+            img: pic4,
+            name: "Valentina Martin",
+            ceo: "Culinary Director",
+            about: "Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.",
+            social: [{
+                icon: facebook,
+                alt: "facebook",
+                link: "facebook.com"
+            },
+            {
+                icon: twitter,
+                alt: "twitter",
+                link: "twitter.com"
+            },
+            {
+                icon: instagram,
+                alt: "instagram",
+                link: "instagram.com"
+            },
+            {
+                icon: youtube,
+                alt: "youtube",
+                link: "youtube.com"
+            }
+
+            ]
+        }
+    ]
+    )
+
+
+    return <div>
+        <div className="ceoList">
+            {list.map((elem, index) => {
+                return <div className="profile" key={index}>
+                    <img src={elem.img} alt={elem.name} />
+                    <div>
+                        <h4>{elem.name}</h4>
+                        <p className="prof">{elem.ceo}</p>
+                        <p className="about">{elem.about}</p>
+                        <div className="icons">
+                            {elem.social.map((sm, index) => {
+                                return <div key={index}>
+                                    <a href={sm.link}> <img src={sm.icon} alt={sm.name}></img></a>
+                                </div>
+                            })}
                         </div>
-
-
                     </div>
-                })}
-            </div>
-
-            <div className="aboutWall">
-
-            </div>
+                </div>
+            })}
         </div>
-    }
+
+        <div className="aboutWall">
+
+        </div>
+    </div>
+
 }
 
