@@ -11,7 +11,7 @@ import "./style.css"
 
 export const List = () => {
 
-    const [name, setName] = useState("pizza")
+
     const [list, setList] = useState([
         {
             img: Pizza1,
@@ -64,14 +64,14 @@ export const List = () => {
         }]
     )
 
-
+    const [name, setName] = useState("pizza")
     const [buttons, setButtons] = useState(["pizza", "salad", "noodle"])
-    let list2 = []
+    const [list2, setList2] = useState([])
 
     const active = (elem) => {
         console.log("ok")
         setName({ name: elem })
-        list2 = list.filter(x => x.type === elem)
+        setList2(list.filter(x => x.type === elem))
     }
     return <>
         <div className="prod">

@@ -23,10 +23,8 @@ export const Panels = () => {
     )
 
     const Close = () => {
-        setFlag({ flag: !flag })
+        setFlag(!flag)
     }
-
-
 
     return <div className="cont">
         <div>
